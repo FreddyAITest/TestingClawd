@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Innovation Newsletter | Neueste KI-Projekte & Insights</title>
-    <meta name="description" content="Erhalten Sie die neuesten Einblicke in KI-Projekte und Software-Innovationen. Melden Sie sich für unseren Newsletter an.">
+    <title>Über uns | AI Insights - Ihr Partner für KI-Innovationen</title>
+    <meta name="description" content="Lernen Sie das Team hinter AI Insights kennen. Wir sind Experten für Künstliche Intelligenz und Softwareentwicklung.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
             overflow-x: hidden;
         }
 
-        /* Fixed Header with Hamburger */
+        /* Header with Hamburger */
         header {
             position: fixed;
             top: 0;
@@ -197,86 +197,19 @@
         .hero h1 {
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             line-height: 1.2;
         }
 
         .hero p {
             font-size: 1.25rem;
             max-width: 600px;
-            margin: 0 auto 2rem;
+            margin: 0 auto;
             opacity: 0.95;
         }
 
-        /* Newsletter Form */
-        .newsletter-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .newsletter-form input[type="email"] {
-            flex: 1;
-            min-width: 250px;
-            padding: 1rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-
-        .newsletter-form button {
-            padding: 1rem 2rem;
-            background: var(--secondary);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-            font-family: inherit;
-        }
-
-        .newsletter-form button:hover {
-            background: #1e293b;
-        }
-
-        .consent-text {
-            font-size: 0.875rem;
-            margin-top: 1rem;
-            opacity: 0.9;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .consent-text a {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .hidden {
-            display: none;
-            visibility: hidden;
-        }
-
-        .consent-wrapper label {
-            line-height: 1.4;
-        }
-
-        .consent-wrapper input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            accent-color: var(--primary);
-        }
-
-        /* Projects Section */
-        .projects {
+        /* About Content */
+        .about-section {
             padding: 5rem 2rem;
             background: var(--bg-light);
         }
@@ -284,6 +217,61 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .about-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            margin-bottom: 3rem;
+        }
+
+        .about-content h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 8px;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            font-size: 1.25rem;
+            color: var(--secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .value-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 5rem 2rem;
+            background: white;
         }
 
         .section-title {
@@ -302,95 +290,53 @@
             font-size: 1.125rem;
         }
 
-        .projects-grid {
+        .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
-        .project-card {
-            background: white;
+        .team-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-light);
             border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s;
         }
 
-        .project-card:hover {
+        .team-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        .project-image {
-            height: 200px;
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 3rem;
             color: white;
-            font-size: 3rem;
         }
 
-        .project-content {
-            padding: 1.5rem;
-        }
-
-        .project-content h3 {
-            font-size: 1.5rem;
-            color: var(--secondary);
-            margin-bottom: 0.75rem;
-        }
-
-        .project-content p {
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
-
-        .project-tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background: var(--bg-light);
-            color: var(--text-light);
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 5rem 2rem;
-            background: white;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
+        .team-card h3 {
             font-size: 1.25rem;
             color: var(--secondary);
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
-        .feature-card p {
+        .team-card .role {
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .team-card p {
             color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         /* Footer */
@@ -455,8 +401,8 @@
                 font-size: 2rem;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
+            .about-content {
+                padding: 1.5rem;
             }
         }
     </style>
@@ -472,10 +418,10 @@
                 <span></span>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="#projekte">Projekte</a></li>
-                <li><a href="about.html">Über uns</a></li>
+                <li><a href="index.html#projekte">Projekte</a></li>
+                <li><a href="about.html" class="active">Über uns</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
@@ -491,10 +437,10 @@
             <button class="sidebar-close" aria-label="Menü schließen" onclick="toggleSidebar()">&times;</button>
         </div>
         <ul class="sidebar-nav">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="#projekte">Projekte</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li><a href="index.html#projekte">Projekte</a></li>
+            <li><a href="about.html" class="active">Über uns</a></li>
             <li><a href="contact.html">Kontakt</a></li>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutz</a></li>
@@ -503,106 +449,86 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Neueste KI-Projekte &<br>Innovationen entdecken</h1>
-        <p>Erhalten Sie exklusive Einblicke in unsere neuesten Software-Projekte und KI-Innovationen direkt in Ihr Postfach.</p>
-        
-        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="newsletter">
-            <p class="hidden" aria-hidden="true">
-                <label>Nicht ausfüllen: <input name="bot-field"></label>
-            </p>
-            <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required aria-label="E-Mail-Adresse für Newsletter">
-            <button type="submit">Kostenlos anmelden</button>
-        </form>
-        
-        <div class="consent-wrapper" style="max-width: 500px; margin: 1rem auto 0; text-align: left;">
-            <label style="display: flex; gap: 0.5rem; align-items: flex-start; font-size: 0.875rem; color: white; cursor: pointer;">
-                <input type="checkbox" name="consent" required style="margin-top: 0.25rem; flex-shrink: 0;">
-                <span>Ich stimme zu, dass meine E-Mail-Adresse zum Zweck des Newsletter-Versands gespeichert und verarbeitet wird. Ich habe die <a href="datenschutz.html" style="color: white; text-decoration: underline;">Datenschutzerklärung</a> gelesen und verstanden. Meine Einwilligung kann ich jederzeit widerrufen.</span>
-            </label>
-        </div>
-        
-        <p class="consent-text" style="margin-top: 0.75rem;">
-            📧 Double Opt-In: Nach der Anmeldung erhalten Sie eine Bestätigungs-E-Mail. Erst nach dem Klick auf den Bestätigungslink ist Ihre Anmeldung abgeschlossen.
-        </p>
+        <h1>Über AI Insights</h1>
+        <p>Wir sind ein Team von KI-Enthusiasten und Softwareentwicklern, die die Zukunft gestalten</p>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projekte">
+    <!-- About Content -->
+    <section class="about-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Unsere neuesten Projekte</h2>
-                <p>Entdecken Sie unsere aktuellen KI- und Software-Innovationen</p>
+            <div class="about-content">
+                <h2>Unsere Mission</h2>
+                <p>AI Insights wurde mit der Vision gegründet, Künstliche Intelligenz für Unternehmen aller Größen zugänglich zu machen. Wir glauben, dass KI-Technologien das Potenzial haben, Geschäftsprozesse zu revolutionieren und innovative Lösungen für komplexe Probleme zu schaffen.</p>
+
+                <p>Unser Team besteht aus erfahrenen Data Scientists, Softwareentwicklern und Branchenexperten, die gemeinsam an der Schnittstelle von Forschung und praktischer Anwendung arbeiten. Wir entwickeln nicht nur fortschrittliche KI-Lösungen, sondern teilen auch unser Wissen durch unseren Newsletter und Blog.</p>
+
+                <h2 style="margin-top: 2rem;">Was uns antreibt</h2>
+                <p>In einer sich schnell wandelnden technologischen Landschaft bleiben wir neugierig und lernbereit. Jedes Projekt ist für uns eine Gelegenheit, neue Erkenntnisse zu gewinnen und unsere Lösungen kontinuierlich zu verbessern. Wir arbeiten eng mit unseren Kunden zusammen, um maßgeschneiderte Lösungen zu entwickeln, die echten Mehrwert bieten.</p>
             </div>
-            
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">🤖</div>
-                    <div class="project-content">
-                        <h3>AI Automation Suite</h3>
-                        <p>Intelligente Automatisierungslösung für Unternehmensprozesse mit maschinellem Lernen und natürlicher Sprachverarbeitung.</p>
-                        <div class="project-tags">
-                            <span class="tag">KI</span>
-                            <span class="tag">Automation</span>
-                            <span class="tag">Enterprise</span>
-                        </div>
-                    </div>
-                </article>
 
-                <article class="project-card">
-                    <div class="project-image">📊</div>
-                    <div class="project-content">
-                        <h3>Predictive Analytics Platform</h3>
-                        <p>Datengetriebene Vorhersagemodelle für präzise Geschäftsprognosen und strategische Entscheidungsfindung.</p>
-                        <div class="project-tags">
-                            <span class="tag">Analytics</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">SaaS</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>Wir bleiben an der Spitze der KI-Forschung und setzen neueste Erkenntnisse in praktische Lösungen um.</p>
+                </div>
 
-                <article class="project-card">
-                    <div class="project-image">💬</div>
-                    <div class="project-content">
-                        <h3>Conversational AI Assistant</h3>
-                        <p>Natürliche Sprachassistenten für Kundenservice und interne Kommunikation mit kontextuellem Verständnis.</p>
-                        <div class="project-tags">
-                            <span class="tag">NLP</span>
-                            <span class="tag">Chatbot</span>
-                            <span class="tag">Customer Service</span>
-                        </div>
-                    </div>
-                </article>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Transparenz</h3>
+                    <p>Wir erklären unsere KI-Systeme verständlich und sorgen für nachvollziehbare Entscheidungen.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Pragmatismus</h3>
+                    <p>Wir fokussieren uns auf Lösungen, die echten Geschäftswert liefern — nicht auf Technologie um ihrer selbst willen.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🔒</div>
+                    <h3>Verantwortung</h3>
+                    <p>Wir entwickeln KI-Systeme, die ethischen Standards entsprechen und die Privatsphäre respektieren.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
+    <!-- Team Section -->
+    <section class="team-section">
         <div class="container">
             <div class="section-title">
-                <h2>Warum unseren Newsletter abonnieren?</h2>
-                <p>Exklusive Inhalte direkt von unserem Entwicklungsteam</p>
+                <h2>Unser Team</h2>
+                <p>Lernen Sie die Köpfe hinter AI Insights kennen</p>
             </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Früher Zugang</h3>
-                    <p>Erfahren Sie als Erster von neuen Projekten und Beta-Versionen unserer Softwarelösungen.</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">👨‍💼</div>
+                    <h3>Dr. Michael Weber</h3>
+                    <div class="role">CEO & Founder</div>
+                    <p>Promovierter KI-Forscher mit 15 Jahren Erfahrung in Machine Learning und Unternehmensberatung.</p>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h3>Experten-Insights</h3>
-                    <p>Tiefe technische Einblicke und Best Practices von unserem KI-Entwicklungsteam.</p>
+
+                <div class="team-card">
+                    <div class="team-avatar">👩‍💻</div>
+                    <h3>Dr. Anna Weber</h3>
+                    <div class="role">Head of Research</div>
+                    <p>Expertin für Generative AI und Natural Language Processing. Veröffentlicht regelmäßig in führenden Fachzeitschriften.</p>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Praktische Anwendungen</h3>
-                    <p>Reale Use-Cases und Implementierungsbeispiele für Ihre eigenen Projekte.</p>
+
+                <div class="team-card">
+                    <div class="team-avatar">👨‍💻</div>
+                    <h3>Markus Schmidt</h3>
+                    <div class="role">Lead Developer</div>
+                    <p>Vollstack-Entwickler mit Schwerpunkt auf skalierbaren KI-Systemen und Cloud-Architekturen.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">👩‍🔬</div>
+                    <h3>Dr. Sarah Klein</h3>
+                    <div class="role">Security Expert</div>
+                    <p>Spezialisiert auf KI-Sicherheit und Adversarial Machine Learning. Beraterin für regulatorische Compliance.</p>
                 </div>
             </div>
         </div>
@@ -621,7 +547,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#projekte">Projekte</a></li>
+                    <li><a href="index.html#projekte">Projekte</a></li>
                     <li><a href="about.html">Über uns</a></li>
                     <li><a href="contact.html">Kontakt</a></li>
                 </ul>
@@ -666,20 +592,6 @@
                 }
             }
         });
-
-        // Netlify Forms: Success message after submission
-        window.onload = function() {
-            const params = new URLSearchParams(window.location.search);
-            if (params.get('success') === 'true') {
-                const form = document.getElementById('newsletter-form');
-                const message = document.createElement('div');
-                message.style.cssText = 'background: #10b981; color: white; padding: 1rem 1.5rem; border-radius: 8px; margin: 2rem auto; max-width: 500px; text-align: center;';
-                message.innerHTML = '<strong>✅ Vielen Dank für Ihre Anmeldung!</strong><br>Sie erhalten in Kürze eine Bestätigungs-E-Mail. Bitte klicken Sie auf den Link darin, um Ihre Anmeldung abzuschließen (Double Opt-In).';
-                form.replaceWith(message);
-                // Clean URL
-                window.history.replaceState({}, document.title, window.location.pathname);
-            }
-        };
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
