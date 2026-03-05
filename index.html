@@ -361,20 +361,24 @@
         
         <!-- Brevo Newsletter Form -->
         <div class="sib-form" style="text-align: center;">
-            <div id="sib-container" class="sib-container--vertical" style="max-width:540px; margin: 0 auto;">
+            <div id="sib-container" class="sib-container--vertical" style="max-width:540px; margin: 0 auto; background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
                 <form id="sib-form" method="POST" action="https://1b30e838.sibforms.com/serve/MUIFACzYNK980ANbLgaBgdz9rb7kM0cbd_FlarizsA9Pe2z_xTzPgHv4LdGrGNNfW1-AdkoS6-iqbE7XtrErU2Y48ovQ-3qGNUnRANCLgAdz6kHda7XFg4ht5U5ggUrLlbppC5g97xvkljU53tOh9eERXIHzJNfg2Cr1PxlcPaTaevGhIBuOuYjUvyQkFWEzloLS1UdhoBYmNf-dvQ==" data-type="subscription">
                     <div style="padding: 8px 0;">
-                        <div class="sib-form-block" style="font-size:16px; font-family:Helvetica, sans-serif; color:#3C4858;">
-                            <p>Gib deine E-Mail-Adresse ein, um dich anzumelden</p>
+                        <div class="sib-form-block" style="font-size:20px; font-weight:700; font-family:'Inter', Helvetica, sans-serif; color:#0f172a;">
+                            <p>📬 Bleib auf dem Laufenden!</p>
+                        </div>
+                    </div>
+                    <div style="padding: 8px 0;">
+                        <div class="sib-form-block" style="font-size:14px; font-family:'Inter', Helvetica, sans-serif; color:#64748b;">
+                            <p>Erhalte die neuesten KI-Projekte & Insights direkt in dein Postfach.</p>
                         </div>
                     </div>
                     <div style="padding: 8px 0;">
                         <div class="sib-input sib-form-block">
                             <div class="form__entry entry_block">
                                 <div class="form__label-row">
-                                    <label class="entry__label" style="font-weight: 700; font-size:16px; color:#3c4858;" for="EMAIL" data-required="*">E-Mail-Adresse</label>
                                     <div class="entry__field">
-                                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="deine@email.de" data-required="true" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px;" />
+                                        <input class="input" type="email" id="EMAIL" name="EMAIL" autocomplete="email" placeholder="deine@email.de" data-required="true" required style="width: 100%; padding: 14px 18px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 16px; font-family:'Inter', sans-serif; color: #334155; background: #ffffff; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2563eb'" onblur="this.style.borderColor='#e2e8f0'" />
                                     </div>
                                 </div>
                             </div>
@@ -382,18 +386,18 @@
                     </div>
                     
                     <!-- DSGVO Consent Checkbox -->
-                    <div style="padding: 8px 0; text-align: left; max-width: 500px; margin: 0 auto;">
-                        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #64748b; cursor: pointer;">
-                            <input type="checkbox" name="consent" required style="margin-top: 2px; flex-shrink: 0;" />
+                    <div style="padding: 12px 0; text-align: left; max-width: 500px; margin: 0 auto;">
+                        <label style="display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: #64748b; cursor: pointer; line-height: 1.5;">
+                            <input type="checkbox" name="consent" required style="margin-top: 2px; flex-shrink: 0; width: 18px; height: 18px; accent-color: #2563eb;" />
                             <span>
-                                Ich habe die <a href="datenschutz.html" style="color: #2563eb; text-decoration: underline;">Datenschutzerklärung</a> gelesen und stimme zu, dass meine E-Mail-Adresse für den Newsletter-Versand gespeichert wird. Ich kann meine Einwilligung jederzeit widerrufen.
+                                Ich habe die <a href="datenschutz.html" style="color: #2563eb; text-decoration: underline;" target="_blank">Datenschutzerklärung</a> gelesen und stimme zu, dass meine E-Mail-Adresse für den Newsletter-Versand gespeichert wird. Ich kann meine Einwilligung jederzeit widerrufen.
                             </span>
                         </label>
                     </div>
                     
                     <div style="padding: 8px 0;">
-                        <button class="sib-form-block__button" style="width: 100%; padding: 14px; background: #0f172a; color: #FFFFFF; border: none; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; font-family: inherit;" form="sib-form" type="submit">
-                            KOSTENLOS ANMELDEN
+                        <button class="sib-form-block__button" style="width: 100%; padding: 16px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #FFFFFF; border: none; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; font-family:'Inter', sans-serif; box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4); transition: transform 0.2s, box-shadow 0.2s;" form="sib-form" type="submit" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 14px rgba(102, 126, 234, 0.4)'">
+                            🚀 KOSTENLOS ANMELDEN
                         </button>
                     </div>
                     
@@ -403,7 +407,7 @@
             </div>
         </div>
         
-        <p class="consent-text" style="margin-top: 1.5rem; font-size: 0.875rem; color: #94a3b8;">
+        <p class="consent-text" style="margin-top: 1.5rem; font-size: 0.875rem; color: rgba(255,255,255,0.8);">
             🔒 DSGVO-konform mit Double Opt-In. Abmeldung jederzeit möglich.
         </p>
     </section>
